@@ -19,7 +19,7 @@ int main() {
     int numero_pontos_turisticos2;
     
 
-    printf ("Digite os dados abaixo\n");
+    printf ("Digite os dados da carta 1:\n");
 
     printf ("Digite o estado: ");
     fgets(estado, sizeof(estado), stdin);
@@ -47,7 +47,7 @@ int main() {
 
     getchar();
 
-    printf ("Digite os dados abaixo\n");
+    printf ("Digite os dados da carta 2:\n");
 
     printf ("Digite o estado: ");
     fgets(estado2, sizeof(estado2), stdin);
