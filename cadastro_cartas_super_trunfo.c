@@ -5,7 +5,7 @@ int main() {
     char codigo_da_cidade[50], estado[50], nome[50];
     unsigned long int populacao;
     float area, pib;
-    int numero_pontos_turisticos;s
+    int numero_pontos_turisticos;
 
     // Variáveis carta 2
     char codigo_da_cidade2[50], estado2[50], nome2[50];
@@ -43,7 +43,7 @@ int main() {
     scanf("%d", &numero_pontos_turisticos);
 
     float densidade_populacional = populacao / area;
-    float pib_per_capita = pib / populacao;
+    double pib_per_capita = (pib / populacao);
     float super_poder = populacao + area + pib + numero_pontos_turisticos + pib_per_capita + (1.0 / densidade_populacional);
 
     getchar(); // Consumir quebra de linha pendente
@@ -73,7 +73,7 @@ int main() {
     scanf("%d", &numero_pontos_turisticos2);
 
     float densidade_populacional2 = populacao2 / area2;
-    float pib_per_capita2 = pib2 / populacao2;
+    double pib_per_capita2 = (pib2 / populacao2);
     float super_poder2 = populacao2 + area2 + pib2 + numero_pontos_turisticos2 + pib_per_capita2 + (1.0 / densidade_populacional2);
 
     // Comparações entre as cartas
@@ -95,7 +95,7 @@ int main() {
     printf("PIB: %.2f bilhões\n", pib);
     printf("Número de pontos turísticos: %d\n", numero_pontos_turisticos);
     printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional);
-    printf("PIB per capita: %.2f\n", pib_per_capita);
+    printf("PIB per capita: %.8lf\n", pib_per_capita);
     printf("Super poder: %.2f\n", super_poder);
 
     // Saída carta 2
@@ -108,7 +108,7 @@ int main() {
     printf("PIB: %.2f bilhões\n", pib2);
     printf("Número de pontos turísticos: %d\n", numero_pontos_turisticos2);
     printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional2);
-    printf("PIB per capita: %.2f\n", pib_per_capita2);
+    printf("PIB per capita: %.8lf\n", pib_per_capita2);
     printf("Super poder: %.2f\n", super_poder2);
 
     // Saída das comparações
